@@ -69,6 +69,6 @@ class BadgesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def badge_params
-      params.require(:badge).permit(:issuer_url, :issuer_organization, :earner_email, :name, :description, :img_url, :issued_on)
+      params.permit(:issuer_url, :issuer_organization, :earner_email, :name, :description, :img_url)
     end
 end
